@@ -48,6 +48,9 @@ function Dog(){
 	this.says = "life is ruff"
 
 };
+// Dog.prototype.bark = function(){}
+
+// 
 
 // -- ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ -- //
 
@@ -138,9 +141,30 @@ console.assert(dontTellNobody.squeal() === mySecret);
 // the secret data.
 
 // -- ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ - Your Answer - ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ -- //
+class Key{
+	constructor(){
+
+	}
 
 
+}
+class Safe{
+constructor(data,myKey){
+this.grabData=function(){
+	return data;
+}
+this.grabKey=function(){
+	return myKey;
+}
+}
+unlock(anyKey){
+if (anyKey ===this.grabKey()){
+	return this.grabData()
 
+}
+	
+  }	
+}
 // -- ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ -- //
 
 // ==== Validating =============================================== //
